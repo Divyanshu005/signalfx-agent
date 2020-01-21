@@ -89,7 +89,7 @@ func portTypeToProtocol(t uint32) services.PortType {
 }
 
 func (o *Observer) discover() []services.Endpoint {
-	conns, err := net.Connections("all")
+	conns, err := net.ConnectionsWithoutUids("all")
 	if err != nil {
 		o.logger.WithError(err).Error("Could not get local network listeners")
 		return nil

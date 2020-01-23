@@ -44,6 +44,7 @@ type MetricInfo struct {
 type Metadata struct {
 	MonitorType       string
 	SendAll           bool
+	SendUnknown       bool
 	DefaultMetrics    map[string]bool
 	Metrics           map[string]MetricInfo
 	MetricsExhaustive bool

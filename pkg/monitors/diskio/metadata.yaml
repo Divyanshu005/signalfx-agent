@@ -14,7 +14,6 @@ monitors:
     monitors:
      - type: disk-io
     ```
-  sendAll: true
   metrics:
     disk_merged.read:
       description: (Linux Only) The number of disk reads merged into single physical
